@@ -1,0 +1,6 @@
+# The file to ignore unnecessary files and directories in the project
+.venv
+__pycache__
+
+# More files and folders includes
+
