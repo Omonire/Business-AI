@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Business AI – Your business, connected to one AI</title>
+    <meta name="description" content="Business AI connects the tools your business already uses into one intelligent command center.">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/landing.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/tailwind-output.css') }}">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-inner">
+
+            <a href="/" class="navbar-brand" aria-label="Business AI home">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                    <rect width="28" height="28" rx="8" fill="#2563eb"/>
+                    <path d="M8 14L12 18L20 10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="text-lg font-semibold text-gray-900">Business AI</span>
+            </a>
+
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="#product" class="nav-link">Product</a></li>
+                    <li><a href="#integrations" class="nav-link">Integrations</a></li>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="/login" class="nav-signin">Sign in</a>
+                    <a href="/signup" class="btn btn-primary btn-sm">Get started</a>
+                </div>
+            </div>
+
+            <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+
+        </div>
+    </nav>
+
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero" id="top">
+            <div class="container hero-inner">
+
+                <div class="hero-copy">
+                    <span class="hero-eyebrow" data-hero="eyebrow">
+                        <span class="hero-eyebrow-dot"></span>
+                        AI command center for your business
+                    </span>
+
+                    <h1 class="hero-title" data-hero="title">
+                        Your business,<br>
+                        <span class="text-blue-600">connected to one AI.</span>
+                    </h1>
+
+                    <p class="hero-subtitle" data-hero="subtitle">
+                        You already have the tools. Business AI connects them —
+                        Gmail, Calendar, Drive, WhatsApp, your docs and your data —
+                        and lets you talk to your business like it's one system.
+                    </p>
+
+                    <div class="hero-actions" data-hero="actions">
+                        <a href="/signup" class="btn btn-primary btn-lg">Get started</a>
+                        <a href="#how-it-works" class="btn btn-secondary btn-lg">
+                            See how it works
+                            <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <p class="hero-note" data-hero="note">The tools you use today. The intelligence you've been missing.</p>
+                </div>
+
+                <div class="hero-visual" data-hero="visual">
+
+                    <!-- Floating integration chips -->
+                    <div class="float-chip float-chip-1" aria-hidden="true">
+                        <div class="float-chip-icon bg-red-50 text-red-500">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </div>
+                        <span>Gmail</span>
+                    </div>
+                    <div class="float-chip float-chip-2" aria-hidden="true">
+                        <div class="float-chip-icon bg-sky-50 text-sky-600">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        </div>
+                        <span>Calendar</span>
+                    </div>
+                    <div class="float-chip float-chip-3" aria-hidden="true">
+                        <div class="float-chip-icon bg-emerald-50 text-emerald-600">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                        </div>
+                        <span>WhatsApp</span>
+                    </div>
+                    <div class="float-chip float-chip-4" aria-hidden="true">
+                        <div class="float-chip-icon bg-purple-50 text-purple-600">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"/><path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/><path d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"/><path d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"/><path d="M14 14.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5z"/><path d="M15.5 19H14v1.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"/></svg>
+                        </div>
+                        <span>Slack</span>
+                    </div>
+                    <div class="float-chip float-chip-5" aria-hidden="true">
+                        <div class="float-chip-icon bg-sky-50 text-sky-600">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 12l-10 6L2 12l10-6 10 6z"/><path d="M12 18V6"/><path d="M22 12L12 6 2 12"/></svg>
+                        </div>
+                        <span>Drive</span>
+                    </div>
+                    <div class="float-chip float-chip-6" aria-hidden="true">
+                        <div class="float-chip-icon bg-violet-50 text-violet-600">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                        </div>
+                        <span>Stripe</span>
+                    </div>
+
+                    <!-- Command center preview -->
+                    <div class="preview">
+                        <div class="preview-bar">
+                            <div class="preview-dots"><span></span><span></span><span></span></div>
+                            <span class="preview-url">app.businessai.io</span>
+                        </div>
+                        <div class="preview-body">
+                            <div class="preview-side">
+                                <div class="preview-brand">
+                                    <svg width="18" height="18" viewBox="0 0 28 28" fill="none">
+                                        <rect width="28" height="28" rx="8" fill="#2563eb"/>
+                                        <path d="M8 14L12 18L20 10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>Business AI</span>
+                                </div>
+                                <ul class="preview-nav">
+                                    <li class="active">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                                        <span>Chat</span>
+                                    </li>
+                                    <li>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                                        <span>Integrations</span>
+                                    </li>
+                                    <li>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                                        <span>Activity</span>
+                                    </li>
+                                    <li>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                                        <span>Settings</span>
+                                    </li>
+                                </ul>
+                                <div class="preview-user">
+                                    <div class="preview-avatar"></div>
+                                    <span>John D.</span>
+                                </div>
+                            </div>
+
+                            <div class="preview-main">
+                                <div class="preview-greeting">
+                                    <div>
+                                        <strong>Good morning, John</strong>
+                                        <span>Here's your business at a glance.</span>
+                                    </div>
+                                    <div class="preview-bell">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                                    </div>
+                                </div>
+
+                                <div class="preview-command">
+                                    <svg class="preview-command-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                                    <span>What needs my attention today?</span>
+                                    <span class="preview-ask">Ask</span>
+                                </div>
+
+                                <div class="preview-stats">
+                                    <div class="preview-stat">
+                                        <span class="preview-stat-value">12</span>
+                                        <span class="preview-stat-label">Replies needed</span>
+                                    </div>
+                                    <div class="preview-stat">
+                                        <span class="preview-stat-value">03</span>
+                                        <span class="preview-stat-label">Meetings today</span>
+                                    </div>
+                                    <div class="preview-stat">
+                                        <span class="preview-stat-value">5</span>
+                                        <span class="preview-stat-label">Follow-ups</span>
+                                    </div>
+                                    <div class="preview-stat">
+                                        <span class="preview-stat-value">$48k</span>
+                                        <span class="preview-stat-label">Open revenue</span>
+                                    </div>
+                                </div>
+
+                                <div class="preview-apps">
+                                    <div class="preview-app gmail">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                    </div>
+                                    <div class="preview-app calendar">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                                    </div>
+                                    <div class="preview-app whatsapp">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                                    </div>
+                                    <div class="preview-app drive">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 12l-10 6L2 12l10-6 10 6z"/><path d="M12 18V6"/><path d="M22 12L12 6 2 12"/></svg>
+                                    </div>
+                                    <div class="preview-app slack">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"/><path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/><path d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"/><path d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"/><path d="M14 14.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5z"/><path d="M15.5 19H14v1.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"/></svg>
+                                    </div>
+                                    <span class="preview-app-more">+5 more</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= INTEGRATIONS / TRUST ================= -->
+
+        <section class="section" id="integrations">
+            <div class="container">
+                <div class="section-head reveal">
+                    <h2 class="section-title">Designed around the tools<br class="hide-mobile"> you already rely on</h2>
+                    <p class="section-sub">Business AI is built for the ecosystem your business lives in. Connectivity for each tool is added progressively — the workspace grows as we do.</p>
+                </div>
+
+                <div class="logo-cloud reveal" data-reveal-delay="100">
+                    <div class="logo-item">
+                        <div class="logo-icon bg-red-50 text-red-500"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+                        <span>Gmail</span>
+                    </div>
+                    <div class="logo-item">
+                        <div class="logo-icon bg-sky-50 text-sky-600"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+                        <span>Google Calendar</span>
+                    </div>
+                    <div class="logo-item">
+                        <div class="logo-icon bg-sky-50 text-sky-600"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 12l-10 6L2 12l10-6 10 6z"/><path d="M12 18V6"/><path d="M22 12L12 6 2 12"/></svg></div>
+                        <span>Drive</span>
+                    </div>
+                    <div class="logo-item">
+                        <div class="logo-icon bg-emerald-50 text-emerald-600"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div>
+                        <span>WhatsApp</span>
+                    </div>
+                    <div class="logo-item">
+                        <div class="logo-icon bg-emerald-50 text-emerald-600"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg></div>
+                        <span>Sheets</span>
+                    </div>
+                    <div class="logo-item">
+                        <div class="logo-icon bg-purple-50 text-purple-600"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"/><path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/><path d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"/><path d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"/><path d="M14 14.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5z"/><path d="M15.5 19H14v1.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"/></svg></div>
+                        <span>Slack</span>
+                    </div>
+                    <div class="logo-item">
+                        <div class="logo-icon bg-emerald-50 text-emerald-600"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div>
+                        <span>Shopify</span>
+                    </div>
+                    <div class="logo-item">
+                        <div class="logo-icon bg-gray-100 text-gray-700"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15zM4 19.5A2.5 2.5 0 0 0 6.5 22H20"/><line x1="8" y1="7" x2="16" y2="7"/><line x1="8" y1="11" x2="16" y2="11"/><line x1="8" y1="15" x2="12" y2="15"/></svg></div>
+                        <span>Notion</span>
+                    </div>
+                    <div class="logo-item">
+                        <div class="logo-icon bg-gray-100 text-gray-700"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></div>
+                        <span>GitHub</span>
+                    </div>
+                    <div class="logo-item">
+                        <div class="logo-icon bg-violet-50 text-violet-600"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></div>
+                        <span>Stripe</span>
+                    </div>
+                </div>
+
+                <p class="section-caption reveal">Ecosystem shown for illustration purposes.</p>
+            </div>
+        </section>
+
+        <!-- ================= PROBLEM ================= -->
+
+        <section class="section section-alt" id="product">
+            <div class="container">
+                <div class="section-head reveal">
+                    <h2 class="section-title">The problem isn't a lack of software.<br class="hide-mobile"> It's too much disconnected software.</h2>
+                    <p class="section-sub">Every tool is smart on its own. Together, they create noise. Business AI turns that noise back into clarity.</p>
+                </div>
+
+                <div class="problem-wrap reveal">
+                    <div class="problem-panel problem-chaos">
+                        <div class="problem-panel-label">Your business today</div>
+                        <div class="chaos-headline">Scattered tools, missed messages, forgotten follow-ups.</div>
+                        <div class="chaos-list">
+                            <div class="chaos-item">
+                                <span class="chaos-tile bg-blue-100 text-blue-600">GM</span>
+                                <span class="chaos-text">Unread reply waiting in Gmail</span>
+                            </div>
+                            <div class="chaos-item">
+                                <span class="chaos-tile bg-sky-100 text-sky-600">CA</span>
+                                <span class="chaos-text">Meeting moved, no one was told</span>
+                            </div>
+                            <div class="chaos-item">
+                                <span class="chaos-tile bg-emerald-100 text-emerald-600">WS</span>
+                                <span class="chaos-text">Customer message on WhatsApp</span>
+                            </div>
+                            <div class="chaos-item">
+                                <span class="chaos-tile bg-purple-100 text-purple-600">SL</span>
+                                <span class="chaos-text">Decision buried in Slack</span>
+                            </div>
+                            <div class="chaos-item">
+                                <span class="chaos-tile bg-amber-100 text-amber-600">SH</span>
+                                <span class="chaos-text">Invoice stuck in Sheets</span>
+                            </div>
+                            <div class="chaos-item">
+                                <span class="chaos-tile bg-violet-100 text-violet-600">ST</span>
+                                <span class="chaos-text">Payment needs follow-up in Stripe</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="problem-arrow" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+                        </svg>
+                    </div>
+
+                    <div class="problem-panel problem-command">
+                        <div class="problem-panel-label">With Business AI</div>
+                        <div class="command-mini">
+                            <div class="command-mini-top">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                                <span>What needs my attention?</span>
+                            </div>
+                            <div class="command-mini-divider"></div>
+                            <div class="command-mini-rows">
+                                <div class="command-mini-row">
+                                    <span class="command-mini-dot bg-blue-500"></span>
+                                    <span>3 customers need a reply in Gmail</span>
+                                </div>
+                                <div class="command-mini-row">
+                                    <span class="command-mini-dot bg-emerald-500"></span>
+                                    <span>Calendar conflict resolved tomorrow</span>
+                                </div>
+                                <div class="command-mini-row">
+                                    <span class="command-mini-dot bg-amber-500"></span>
+                                    <span>4 invoices await payment follow-up</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="pain-list reveal">
+                    <li>Too many apps</li>
+                    <li>Missed messages</li>
+                    <li>Forgotten follow-ups</li>
+                    <li>Scattered customer information</li>
+                    <li>Repetitive work</li>
+                    <li>Manual data movement</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ================= HOW IT WORKS ================= -->
+
+        <section class="section" id="how-it-works">
+            <div class="container">
+                <div class="section-head reveal">
+                    <h2 class="section-title">From scattered tools<br class="hide-mobile"> to a single command center</h2>
+                    <p class="section-sub">Three steps. No migration, no new habits to learn.</p>
+                </div>
+
+                <div class="steps">
+                    <div class="step reveal">
+                        <div class="step-number">01</div>
+                        <div class="step-icon bg-blue-50 text-blue-600">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                        </div>
+                        <h3 class="step-title">Connect your tools</h3>
+                        <p class="step-text">Link Gmail, Calendar, Drive, WhatsApp and the rest. Your existing workspaces stay exactly where they are.</p>
+                    </div>
+                    <div class="step reveal" data-reveal-delay="100">
+                        <div class="step-number">02</div>
+                        <div class="step-icon bg-emerald-50 text-emerald-600">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                        </div>
+                        <h3 class="step-title">Give Business AI context</h3>
+                        <p class="step-text">Share who your customers are, how you work, and what matters. Business AI learns your business, not a generic template.</p>
+                    </div>
+                    <div class="step reveal" data-reveal-delay="200">
+                        <div class="step-number">03</div>
+                        <div class="step-icon bg-violet-50 text-violet-600">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                        </div>
+                        <h3 class="step-title">Ask your business anything</h3>
+                        <p class="step-text">"What customers need a reply?" "What's on my calendar tomorrow?" One command, one answer — drawn from your real tools.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= AI COMMAND SECTION ================= -->
+
+        <section class="section section-command" id="command">
+            <div class="container">
+                <div class="command-shell reveal">
+                    <div class="command-header">
+                        <span class="command-glow"></span>
+                        <h2 class="command-title">Ask your business anything.</h2>
+                        <p class="command-sub">Not a search box. A command center that understands your tools, your customers, and your day.</p>
+                    </div>
+
+                    <div class="command-input-row">
+                        <svg class="command-input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                        <input type="text" class="command-input" id="commandInput" placeholder="What customers need a reply?" aria-label="Ask Business AI a question">
+                        <button class="command-submit" id="commandSubmit" aria-label="Ask">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="command-examples">
+                        <button type="button" class="command-chip">What customers need a reply?</button>
+                        <button type="button" class="command-chip">What's on my calendar tomorrow?</button>
+                        <button type="button" class="command-chip">Which customers haven't received a follow-up?</button>
+                        <button type="button" class="command-chip">Find important emails I haven't responded to</button>
+                    </div>
+
+                    <p class="command-note">Command interface preview. AI responses are not simulated yet.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= FEATURES ================= -->
+
+        <section class="section" id="features">
+            <div class="container">
+                <div class="section-head reveal">
+                    <h2 class="section-title">Everything your business needs.<br class="hide-mobile"> One calm workspace.</h2>
+                    <p class="section-sub">Business AI stops being another tab you check — and starts being where the work happens.</p>
+                </div>
+
+                <div class="feature-grid">
+                    <div class="feature reveal">
+                        <div class="feature-icon bg-blue-50 text-blue-600">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a4 4 0 0 1 4 4v4a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4z"/><path d="M19 9v3a7 7 0 0 1-14 0V9"/></svg>
+                        </div>
+                        <h3 class="feature-title">Business-aware AI</h3>
+                        <p class="feature-text">Answers grounded in your customers, your projects, and your tools — not generic knowledge.</p>
+                    </div>
+                    <div class="feature reveal" data-reveal-delay="60">
+                        <div class="feature-icon bg-emerald-50 text-emerald-600">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+                        </div>
+                        <h3 class="feature-title">Unified workspace</h3>
+                        <p class="feature-text">Email, calendars, files and messages in one place — with one consistent view of work.</p>
+                    </div>
+                    <div class="feature reveal" data-reveal-delay="120">
+                        <div class="feature-icon bg-violet-50 text-violet-600">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                        </div>
+                        <h3 class="feature-title">Business insights</h3>
+                        <p class="feature-text">Spot revenue trends, customer risk, and momentum shifts before they become problems.</p>
+                    </div>
+                    <div class="feature reveal" data-reveal-delay="180">
+                        <div class="feature-icon bg-sky-50 text-sky-600">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                        </div>
+                        <h3 class="feature-title">Connected tools</h3>
+                        <p class="feature-text">Your existing apps stay yours. Business AI reads across them instead of replacing them.</p>
+                    </div>
+                    <div class="feature reveal" data-reveal-delay="240">
+                        <div class="feature-icon bg-amber-50 text-amber-600">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                        </div>
+                        <h3 class="feature-title">Activity tracking</h3>
+                        <p class="feature-text">A living timeline of your business — every reply, payment, and decision, in order.</p>
+                    </div>
+                    <div class="feature reveal" data-reveal-delay="300">
+                        <div class="feature-icon bg-blue-50 text-blue-600">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        </div>
+                        <h3 class="feature-title">Smart follow-ups</h3>
+                        <p class="feature-text">Business AI notices the messages and customers that are slipping through the cracks.</p>
+                    </div>
+                    <div class="feature reveal" data-reveal-delay="360">
+                        <div class="feature-icon bg-purple-50 text-purple-600">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                        </div>
+                        <h3 class="feature-title">Business knowledge</h3>
+                        <p class="feature-text">Your customer notes, policies, and context stored once — and used everywhere.</p>
+                    </div>
+                    <div class="feature reveal" data-reveal-delay="420">
+                        <div class="feature-icon bg-emerald-50 text-emerald-600">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                        </div>
+                        <h3 class="feature-title">Secure approvals</h3>
+                        <p class="feature-text">AI prepares actions. You approve what actually goes out. Nothing happens without you.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SAFETY / CONTROL ================= -->
+
+        <section class="section section-alt" id="safety">
+            <div class="container">
+                <div class="section-head reveal">
+                    <h2 class="section-title">Helpful by design.<br class="hide-mobile"> Controlled by you.</h2>
+                    <p class="section-sub">Business AI understands the difference between reading, preparing, and acting. It always will.</p>
+                </div>
+
+                <div class="safety-steps">
+                    <div class="safety-step reveal">
+                        <div class="safety-step-head">
+                            <span class="safety-badge bg-blue-100 text-blue-700">READ</span>
+                            <span class="safety-title">Analyze</span>
+                        </div>
+                        <p class="safety-text">Business AI can read and reason across your connected tools to answer questions and surface what matters.</p>
+                    </div>
+
+                    <div class="safety-step reveal" data-reveal-delay="80">
+                        <div class="safety-step-head">
+                            <span class="safety-badge bg-amber-100 text-amber-700">DRAFT</span>
+                            <span class="safety-title">Prepare</span>
+                        </div>
+                        <p class="safety-text">Business AI can draft replies, summaries, and follow-ups. Drafts stay in the workspace until you decide.</p>
+                    </div>
+
+                    <div class="safety-step reveal" data-reveal-delay="160">
+                        <div class="safety-step-head">
+                            <span class="safety-badge bg-emerald-100 text-emerald-700">SEND / WRITE</span>
+                            <span class="safety-title">Act</span>
+                        </div>
+                        <p class="safety-text">Sending an email, writing to a customer, or updating a document requires your explicit approval. Always.</p>
+                    </div>
+                </div>
+
+                <div class="safety-note reveal">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    <span><strong>You stay in control.</strong> Business AI analyzes and prepares. It never acts without you.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= FINAL CTA ================= -->
+
+        <section class="section section-cta" id="pricing">
+            <div class="container">
+                <div class="cta-panel reveal">
+                    <h2 class="cta-title">Turn your scattered tools<br> into one intelligent business.</h2>
+                    <p class="cta-sub">Connect what you already use. Talk to your business like it's one system.</p>
+                    <div class="cta-actions">
+                        <a href="/signup" class="btn btn-primary btn-lg">Get started</a>
+                        <a href="/login" class="btn btn-ghost btn-lg">Sign in</a>
+                    </div>
+                    <p class="cta-note">No credit card required to explore.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+
+                <div class="footer-brand-col">
+                    <a href="/" class="navbar-brand footer-brand" aria-label="Business AI home">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <rect width="28" height="28" rx="8" fill="#2563eb"/>
+                            <path d="M8 14L12 18L20 10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="text-lg font-semibold text-gray-900">Business AI</span>
+                    </a>
+                    <p class="footer-tagline">The AI-powered business command center that connects the tools you already use.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Twitter / X" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.4l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.6l5.24 6.93 6.06-6.93z"/></svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+                        </a>
+                        <a href="#" aria-label="YouTube" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3 3 0 0 0-2.12-2.13C19.51 3.55 12 3.55 12 3.55s-7.51 0-9.38.51A3 3 0 0 0 .5 6.19 31.62 31.62 0 0 0 0 12a31.62 31.62 0 0 0 .5 5.81 3 3 0 0 0 2.12 2.13c1.87.51 9.38.51 9.38.51s7.51 0 9.38-.51a3 3 0 0 0 2.12-2.13A31.62 31.62 0 0 0 24 12a31.62 31.62 0 0 0-.5-5.81zM9.55 15.57V8.43L15.82 12l-6.27 3.57z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="#product">Overview</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="/dashboard">Dashboard</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Help center</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">API docs</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <span>&copy; 2026 Business AI. All rights reserved.</span>
+                <span>Designed to keep you in control.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+    <script src="{{ url_for('static', filename='js/landing.js') }}"></script>
+
+</body>
+</html>

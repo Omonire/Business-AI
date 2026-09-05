@@ -1,0 +1,25 @@
+{
+  "name": "business-ai",
+  "version": "1.0.0",
+  "description": "Create a readme for the business",
+  "main": "index.js",
+  "scripts": {
+  "build:css": "npx @tailwindcss/cli -i ./app/static/css/tailwind.css -o ./app/static/css/tailwind-output.css --watch"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Omonire/Business-AI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Omonire/Business-AI/issues"
+  },
+  "homepage": "https://github.com/Omonire/Business-AI#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}

@@ -2,5 +2,7 @@
 .venv
 __pycache__
 
-# More files and folders includes
-
+node_modules/
+.env
+app/__pycache__
+*.pyc
